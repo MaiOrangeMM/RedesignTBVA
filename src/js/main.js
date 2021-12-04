@@ -1,4 +1,5 @@
-const lines = document.querySelectorAll(".line")
+const lines = document.querySelectorAll(".line");
+const social = document.querySelector("#socialtab");
 // FULLPAGE JS
 new fullpage('#fullpage', {
 	//options here
@@ -11,18 +12,13 @@ new fullpage('#fullpage', {
 
     afterLoad: (origin, destination) => {
         lines[destination.index].classList.add('lineani');
+
+        if (destination.index === 2) {
+            social.classList.add('d-md-none');
+        } else {
+            social.classList.remove('d-md-none');
+        }
     },
-    onLeave: function(origin, destination, direction) {
-        //Aboutme
-        // if (origin.index == 0) {
-        //     lines[origin.index].classList.add('lineani');
-        // };
-        // //Contact
-        // if (origin.index == 3) {
-        //     console.log('hio')
-        //     lines[origin.index].classList.add('lineani');
-        // };
-    }
 });
 
 
