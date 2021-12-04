@@ -4,24 +4,24 @@ $name = filter_input( INPUT_POST, 'name', FILTER_SANITIZE_STRING );
 $message = filter_input( INPUT_POST, 'message', FILTER_SANITIZE_STRING );
 
 if( empty($email) ) {
-    header('Location: http://www.test.tbvisualarts.com/?missingEmail');
+    header('Location: http://www.tbvisualarts.com/?missingEmail');
     die();
 }
 
 if( empty($name) ) {
-    header('Location: http://www.test.tbvisualarts.com/?missingName');
+    header('Location: http://www.tbvisualarts.com/?missingName');
     die();
 }
 
 if( empty($message) ) {
-    header('Location: http://www.test.tbvisualarts.com/?missingMessage');
+    header('Location: http://www.tbvisualarts.com/?missingMessage');
     die();
 }
 
-$subject = "New contact request from {$name} : {$email}";
+$subject = "Neue Anfrage von{$name} : {$email}";
 
-mail( 'maiqn92@googlemail.com', $subject, $message );
+mail( 'info@tbvisualarts.com', $subject, $message );
 
-header('Location: http://www.test.tbvisualarts.com/');
+header('Location: http://www.tbvisualarts.com/');
 die();
 ?>
