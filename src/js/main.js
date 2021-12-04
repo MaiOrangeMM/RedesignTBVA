@@ -1,6 +1,9 @@
 // FULLPAGE JS
 const start = document.querySelector(".startingline");
-const line = document.querySelector(".line");
+const line1 = document.querySelector(".line1");
+const line2 = document.querySelector(".line2");
+const line3 = document.querySelector(".line3");
+const line4 = document.querySelector(".line4");
 
 new fullpage('#fullpage', {
 	//options here
@@ -19,14 +22,18 @@ new fullpage('#fullpage', {
 
         //Services
         if (origin.index == 2) {
-            console.log('Index 2 AL');
-            line.classList.add('lineani');
+            line3.classList.add('lineani');
         };
     },
     onLeave: function(origin, destination, direction) {
-        //Aboutm
+        //Aboutme
         if (origin.index == 0) {
-            line.classList.add('lineani');
+            line1.classList.add('lineani');
+        };
+        //Contact
+        if (origin.index == 3) {
+            console.log('hio')
+            line4.classList.add('lineani');
         };
     }
 });
