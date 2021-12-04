@@ -14,7 +14,7 @@
 
 *,
 *::before,
-*::after, .row, nav {
+*::after, .row, nav, h4, h6 {
   margin: 0;
   padding: 0;
 }
@@ -250,23 +250,41 @@ a:hover {
 }
 
 .servicepic {
+  height: 15em;
+  max-height: 15em;
   -o-object-fit: cover;
      object-fit: cover;
-  max-height: 400px;
-  min-width: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 768px) {
+.private {
+  background-image: url(/src/img/private.jpg);
+}
+
+.dealership {
+  background-image: url(/src/img/dealership.jpg);
+}
+
+@media only screen and (min-width: 768px) {
   .servicepic {
-    -o-object-fit: cover;
-       object-fit: cover;
-    max-height: 150px;
-    min-width: 300px;
+    height: 25em;
+    max-height: 25em;
   }
+}
+
+.servicetext {
+  text-shadow: 0px 0px 5px #969696;
 }
 
 form input:focus,
 form textarea:focus {
   outline: 2px solid #ff2d41;
+}
+
+footer {
+  background-color: #ff2d41;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
