@@ -164,15 +164,14 @@ body {
             top: 50%;
             width: 3px;
             height: 50vh;
+            background-position: bottom;
             background-image: linear-gradient(to bottom, $primary 50%, transparent 50%);
             background-size: 100% 200%;
-            background-position: bottom;
-            transition: background-position 0.5s ease-in-out;
+            transition: background-position 1.5s ease-in-out;
         }
 
-        .startingline:hover {
+        .startinglineani {
             background-position: top;
-            cursor: pointer;
         }
 
         .line {
@@ -183,12 +182,11 @@ body {
             background-image: linear-gradient(to bottom, $primary 50%, transparent 50%);
             background-size: 100% 200%;
             background-position: bottom;
-            transition: background-position 0.5s ease-in-out;
+            transition: background-position 1.5s ease-in-out;
         }
 
-        .line:hover {
+        .lineani {
             background-position: top;
-            cursor: pointer;
         }
 
     .hero {

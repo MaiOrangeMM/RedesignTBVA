@@ -68,7 +68,7 @@
 
     <div id="fullpage">
       <!-- HOME -->
-      <div class="section hero">
+      <div class="section hero" data-anchor="home">
         <div class="row">
           <div class="col-2 sidelines d-flex flex-column align-items-center">
             <div class="dot glow"></div>
@@ -81,7 +81,7 @@
       </div>
 
       <!-- ABOUT ME -->
-      <div class="section">
+      <div class="section"  data-anchor="about">
         <div class="row">
           <div class="col-2 sidelines d-flex flex-column align-items-center">
             <div class="dot glow"></div>
@@ -107,7 +107,7 @@
       </div>
 
       <!-- PORTFOLIO -->
-      <div class="section">
+      <div class="section" data-anchor="portfolio">
         <div class="row">
 
           <div class="col-12">
@@ -122,7 +122,7 @@
       </div>
 
       <!-- SERVICES -->
-      <div class="section">
+      <div class="section" data-anchor="portfolio">
         <div class="row">
           <div class="col-2 sidelines d-flex flex-column align-items-center">
             <div class="dot glow"></div>
@@ -150,7 +150,7 @@
       </div>
 
       <!-- CONTACT -->
-      <div class="section">
+      <div class="section" data-anchor="contact">
         <div class="row">
           <div class="col-2 sidelines d-flex flex-column align-items-center">
             <div class="dot glow"></div>
@@ -160,7 +160,7 @@
             <div class="col-10">
               <h1 class="display-4 pb-3">CONTACT</h1>
               <h2 class="h4 py-md-3">Want to work with me?</h2>
-              <form class="py-md-3">
+              <form class="py-md-3" action="/" method="post" id="signup-form">
                 <div class="pb-md-3">
                   <label for="inputName" class="form-label fs-6">Name:</label>
                   <input type="text" class="form-control rounded-0" id="inputName" aria-describedby="emailHelp" required />
