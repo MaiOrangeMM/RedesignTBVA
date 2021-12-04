@@ -3,6 +3,12 @@ new fullpage('#fullpage', {
 	//options here
 	autoScrolling:true,
     anchors:['firstPage', 'secondPage'],
+
+    afterLoad: function(anchorLink, index, direction) {
+        if (index == 3) {
+            $('#socialtab').hide();
+        } 
+    }
 });
 
 
