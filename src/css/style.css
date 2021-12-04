@@ -27,7 +27,7 @@ body {
 
 nav {
   width: 100vw;
-  height: 5em;
+  height: 4em;
   position: absolute;
   z-index: 9999;
   background-color: #000;
@@ -50,7 +50,7 @@ a:hover {
   transition: all .3s ease-in;
 }
 
-.active a {
+.active .menulink {
   color: #ff2d41;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
@@ -251,8 +251,8 @@ a:hover {
 }
 
 .servicepic {
-  height: 15em;
-  max-height: 15em;
+  height: 12em;
+  max-height: 12em;
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
@@ -282,6 +282,14 @@ footer {
   color: #000;
 }
 
+footer .footerlink, footer .footerlink:visited {
+  color: #000;
+}
+
+footer .footerlink:hover {
+  color: #FFF;
+}
+
 /* MEDIA QUERIES FOR DEKTOP */
 @media only screen and (max-width: 768px) {
   nav {
@@ -305,5 +313,9 @@ footer {
     height: 25em;
     max-height: 25em;
   }
+}
+
+.datenschutzrow {
+  margin-top: 5em;
 }
 /*# sourceMappingURL=style.css.map */
