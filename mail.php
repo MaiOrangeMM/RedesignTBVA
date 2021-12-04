@@ -1,7 +1,7 @@
 <?php 
-$email = filter_input( INPUT_POST, 'inputEmail', FILTER_SANITIZE_EMAIL );
-$name = filter_input( INPUT_POST, 'inputName', FILTER_SANITIZE_STRING );
-$message = filter_input( INPUT_POST, 'inputTextarea', FILTER_SANITIZE_STRING );
+$email = filter_input( INPUT_POST, 'email', FILTER_SANITIZE_EMAIL );
+$name = filter_input( INPUT_POST, 'name', FILTER_SANITIZE_STRING );
+$message = filter_input( INPUT_POST, 'message', FILTER_SANITIZE_STRING );
 
 if( empty($email) ) {
     header('Location: http://www.test.tbvisualarts.com/?missingEmail');

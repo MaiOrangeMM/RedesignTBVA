@@ -333,6 +333,8 @@ footer .footerlink:hover {
   .servicepic {
     height: 25em;
     max-height: 25em;
+    -webkit-box-shadow: 5px 5px 0px 0px #ff2d41, 10px 10px 0px 0px #b9202f, 15px 15px 0px 0px #911925, 20px 20px 0px 0px #64111a, 25px 25px 0px 0px #36090f, -50px -50px 0px -30px rgba(0, 0, 0, 0);
+            box-shadow: 5px 5px 0px 0px #ff2d41, 10px 10px 0px 0px #b9202f, 15px 15px 0px 0px #911925, 20px 20px 0px 0px #64111a, 25px 25px 0px 0px #36090f, -50px -50px 0px -30px rgba(0, 0, 0, 0);
   }
 }
 
