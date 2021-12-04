@@ -213,7 +213,17 @@ a:hover {
   top: 50%;
   width: 3px;
   height: 50vh;
-  background-color: #ff2d41;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff2d41), color-stop(50%, transparent));
+  background-image: linear-gradient(to bottom, #ff2d41 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  -webkit-transition: background-position 0.5s ease-in-out;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.startingline:hover {
+  background-position: top;
+  cursor: pointer;
 }
 
 .line {
@@ -221,7 +231,17 @@ a:hover {
   margin-top: -20px;
   width: 3px;
   height: 100%;
-  background-color: #ff2d41;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff2d41), color-stop(50%, transparent));
+  background-image: linear-gradient(to bottom, #ff2d41 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: bottom;
+  -webkit-transition: background-position 0.5s ease-in-out;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.line:hover {
+  background-position: top;
+  cursor: pointer;
 }
 
 .hero {
@@ -290,7 +310,7 @@ footer .footerlink:hover {
   color: #FFF;
 }
 
-/* MEDIA QUERIES FOR DEKTOP */
+/* MEDIA QUERIES FOR MOBILE */
 @media only screen and (max-width: 768px) {
   nav {
     height: auto;
@@ -301,6 +321,9 @@ footer .footerlink:hover {
     left: 0;
     width: 100%;
     text-align: center;
+  }
+  .aboutmetext {
+    font-size: smaller;
   }
 }
 

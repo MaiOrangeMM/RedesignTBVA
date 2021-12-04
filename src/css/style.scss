@@ -164,7 +164,15 @@ body {
             top: 50%;
             width: 3px;
             height: 50vh;
-            background-color: $primary;  
+            background-image: linear-gradient(to bottom, $primary 50%, transparent 50%);
+            background-size: 100% 200%;
+            background-position: bottom;
+            transition: background-position 0.5s ease-in-out;
+        }
+
+        .startingline:hover {
+            background-position: top;
+            cursor: pointer;
         }
 
         .line {
@@ -172,7 +180,15 @@ body {
             margin-top: -20px;
             width: 3px;
             height:100%;
-            background-color: $primary;  
+            background-image: linear-gradient(to bottom, $primary 50%, transparent 50%);
+            background-size: 100% 200%;
+            background-position: bottom;
+            transition: background-position 0.5s ease-in-out;
+        }
+
+        .line:hover {
+            background-position: top;
+            cursor: pointer;
         }
 
     .hero {
@@ -236,7 +252,7 @@ body {
     }
 
 
-/* MEDIA QUERIES FOR DEKTOP */
+/* MEDIA QUERIES FOR MOBILE */
 @media only screen and (max-width: 768px) {
     nav {
         height: auto;
@@ -248,6 +264,10 @@ body {
         left: 0;
         width: 100%;
         text-align: center;
+    }
+
+    .aboutmetext {
+        font-size: smaller;
     }
 }
 
