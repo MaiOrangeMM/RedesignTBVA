@@ -30,6 +30,37 @@
   </head>
 
   <body>
+     <nav>
+      <div class="container d-md-flex justify-content-between align-items-center h-100">
+        <div class="brand d-none d-md-flex">
+          <a class="menulinkbtn" href="#home">
+            <img id="logo" src="src/img/logotbvisualarts-white.svg" alt="logo" width="200em"/>
+          </a>
+        </div>
+
+        <div class="menumobile d-md-none d-flex justify-content-between align-items-center p-3">
+          <div class="brand">
+            <a class="menulinkbtn" href="#home">
+              <img id="logo" src="src/img/logotbvisualarts-white.svg" alt="logo" width="200em"/>
+            </a>
+          </div>
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </div>
+
+        <ul id="menu" class="menulinks d-md-flex d-none flex-column flex-md-row align-items-center ">
+          <li class="pb-3 pb-md-0" data-menuanchor="home"><a href="#home">HOME</a></li>
+          <li class="pb-3 pb-md-0" data-menuanchor="about"><a href="#about">ABOUT ME</a></li>
+          <li class="pb-3 pb-md-0" data-menuanchor="portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+          <li class="pb-3 pb-md-0" data-menuanchor="services"><a href="#services">SERVICES</a></li>
+          <li class="pb-3 pb-md-0" data-menuanchor="contact"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+
+
+    </nav>
+
     <div id="socialtab" class="social d-none d-md-flex flex-column justify-content-evenly align-items-center">
       <a href="https://www.instagram.com/tb.visualarts/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.instagram.com/tb.visualarts/" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -83,6 +114,7 @@
             <h1 class="display-4 pb-3">PORTFOLIO</h1>
             <div class="gallery">
               XXXX
+              <h1 id="mis">MIS</h1>
             </div>
           </div>
 
@@ -156,7 +188,11 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-12 col-md-4 pb-4 pb-md-0 d-flex flex-column justify-content-center align-items-center">
             <h4>TB VISUAL ARTS</h4>
-            <h6>&copy; 2021 | All rights reserved.</h6>
+            <h6>&copy; 
+              <span id="copyright">
+                <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+              </span>
+               | All rights reserved.</h6>
           </div>
           <div class="col-12 col-md-4 pb-4 pb-md-0 d-flex justify-content-center align-items-center">
             <h6>IMPRESSUM | DATENSCHUTZ</h6>

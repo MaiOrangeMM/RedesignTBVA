@@ -18,7 +18,7 @@ $secondary: #000;
 
 *, 
 *::before,
-*::after, .row, nav, h4, h6 {
+*::after, .row, nav, h4, h6, li, a, ul {
   margin: 0;
   padding: 0;
 }
@@ -31,22 +31,16 @@ body {
 
     nav {
         width: 100vw;
-        height: 4em;
+        height: 5em;
         position: absolute;
         z-index: 9999;
         background-color: $secondary;
     }
 
-        .menudesktop {
-            height: 100%;
-        }
-
         li {
             list-style: none;
             padding-right: 2em;
         }
-
-        
             
         a, a:visited {
             text-decoration: none;
@@ -55,6 +49,11 @@ body {
         }
 
         a:hover {
+            color: $primary;
+            transition: all .3s ease-in;
+        }
+
+        .active a {
             color: $primary;
             transition: all .3s ease-in;
         }
@@ -68,7 +67,6 @@ body {
             height: 30px;
             cursor: pointer;
             transition: all .5s ease-in-out;
-            /* border: 3px solid #fff; */
         }
 
         .menu-btn__burger {
@@ -181,7 +179,7 @@ body {
         background-image: url('../img/Hero.jpg');
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
     .content {
@@ -215,13 +213,6 @@ body {
                 background-image: url(/src/img/dealership.jpg);
             }
 
-        @media only screen and (min-width: 768px) {
-            .servicepic {
-                height: 25em;
-                max-height: 25em;
-            }
-        }
-
         .servicetext {
             text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
         }
@@ -235,4 +226,30 @@ body {
         background-color: $primary;
         color: $secondary;
     }
+
+/* MEDIA QUERIES FOR DEKTOP */
+@media only screen and (max-width: 768px) {
+    nav {
+        height: auto;
+    }
+    nav #menu {
+        position: absolute;
+        background-color: $secondary;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERIES FOR DEKTOP */
+@media only screen and (min-width: 768px) {
+    .hero {
+        background-size: cover;
+    }
+            
+    .servicepic {
+        height: 25em;
+        max-height: 25em;
+    }
+}
            
