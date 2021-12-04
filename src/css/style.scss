@@ -159,22 +159,15 @@ body {
         }
 
         .startingline {
-            position: relative;
-            margin-top: -20px;
-            top: 50%;
-            width: 3px;
             height: 50vh;
-            background-position: bottom;
-            background-image: linear-gradient(to bottom, $primary 50%, transparent 50%);
             background-size: 100% 200%;
-            transition: background-position 1.5s ease-in-out;
         }
 
         .startinglineani {
             background-position: top;
         }
 
-        .line1, .line2, .line3, .line4  {
+        .line {
             position: relative;
             margin-top: -20px;
             width: 3px;
