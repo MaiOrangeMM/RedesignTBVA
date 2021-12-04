@@ -1,10 +1,4 @@
 // FULLPAGE JS
-const start = document.querySelector(".startingline");
-const line1 = document.querySelector(".line1");
-const line2 = document.querySelector(".line2");
-const line3 = document.querySelector(".line3");
-const line4 = document.querySelector(".line4");
-
 new fullpage('#fullpage', {
 	//options here
     licenseKey: 'YB6B09247-BFD74F6D-80FC8055-F23750CA',
@@ -14,27 +8,19 @@ new fullpage('#fullpage', {
     css3: true,
     fitToSection: true,
 
-    afterLoad: function(origin, destination, direction) {
-        //Home
-        if (origin.index == 0) {
-            start.classList.add('startinglineani');
-        };
-
-        //Services
-        if (origin.index == 2) {
-            line3.classList.add('lineani');
-        };
+    afterLoad: function(origin) {
+        origin.item.classList.add('lineani');
     },
     onLeave: function(origin, destination, direction) {
         //Aboutme
-        if (origin.index == 0) {
-            line1.classList.add('lineani');
-        };
-        //Contact
-        if (origin.index == 3) {
-            console.log('hio')
-            line4.classList.add('lineani');
-        };
+        // if (origin.index == 0) {
+        //     lines[origin.index].classList.add('lineani');
+        // };
+        // //Contact
+        // if (origin.index == 3) {
+        //     console.log('hio')
+        //     lines[origin.index].classList.add('lineani');
+        // };
     }
 });
 
