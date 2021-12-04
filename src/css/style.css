@@ -20,44 +20,41 @@
 }
 
 body {
-  width: 100vw;
-  overflow: hidden;
-  background-color: #141414;
+  background-color: #000;
   color: #FFF;
   font-family: ArcaMajora3, 'Poppins', sans-serif;
 }
 
-body nav {
+nav {
   width: 100vw;
   height: 4em;
   position: absolute;
   z-index: 9999;
-  background-color: #141414;
-  /* ANIMATION */
+  background-color: #000;
 }
 
-body nav .menudesktop {
+.menudesktop {
   height: 100%;
 }
 
-body nav .menudesktop li {
+li {
   list-style: none;
   padding-right: 2em;
 }
 
-body nav .menudesktop a, body nav .menudesktop a:visited {
+a, a:visited {
   text-decoration: none;
   color: #FFF;
   font-size: 1.5em;
 }
 
-body nav .menudesktop a:hover {
+a:hover {
   color: #ff2d41;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
 
-body nav .menu-btn {
+.menu-btn {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,7 +73,7 @@ body nav .menu-btn {
   /* border: 3px solid #fff; */
 }
 
-body nav .menu-btn__burger {
+.menu-btn__burger {
   width: 30px;
   height: 3px;
   background: #fff;
@@ -84,8 +81,8 @@ body nav .menu-btn__burger {
   transition: all .5s ease-in-out;
 }
 
-body nav .menu-btn__burger::before,
-body nav .menu-btn__burger::after {
+.menu-btn__burger::before,
+.menu-btn__burger::after {
   content: '';
   position: absolute;
   width: 30px;
@@ -95,35 +92,36 @@ body nav .menu-btn__burger::after {
   transition: all .5s ease-in-out;
 }
 
-body nav .menu-btn__burger::before {
+.menu-btn__burger::before {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
 
-body nav .menu-btn__burger::after {
+.menu-btn__burger::after {
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
 }
 
-body nav .menu-btn.open .menu-btn__burger {
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
   background: transparent;
 }
 
-body nav .menu-btn.open .menu-btn__burger::before {
+.menu-btn.open .menu-btn__burger::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-body nav .menu-btn.open .menu-btn__burger::after {
+.menu-btn.open .menu-btn__burger::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-body .social {
+.social {
   width: 3em;
   height: 6.5em;
   top: 50%;
-  left: 0;
+  right: 0;
   position: absolute;
   background-color: #ff2d41;
   -webkit-transform: translateY(-50%);
@@ -131,51 +129,26 @@ body .social {
   z-index: 9999;
 }
 
-body .social a {
+.social a {
   font-size: 1.5em;
 }
 
-body .social a, body .social a:visited {
-  color: #141414;
+.social a, .social a:visited {
+  color: #000;
 }
 
-body .social a:hover {
+.social a:hover {
   color: #FFF;
 }
 
-body main::-webkit-scrollbar {
-  display: none;
-}
-
-body main {
+.sidelines {
   height: 100vh;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
-body main section {
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
-body main section:nth-of-type(1) {
-  background-image: url("../img/Hero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body main section .sidelines {
-  height: 100vh;
-  /* ANIMATION */
-}
-
-body main section .sidelines .dot {
+.dot {
   position: relative;
-  height: 20px;
-  width: 20px;
+  height: 21px;
+  width: 21px;
   border-radius: 50%;
   background-color: #ff2d41;
   top: 50%;
@@ -187,6 +160,7 @@ body main section .sidelines .dot {
           animation: heartbeat 1.5s ease-in-out infinite;
 }
 
+/* ANIMATION */
 @-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1.3);
@@ -209,7 +183,6 @@ body main section .sidelines .dot {
             animation-timing-function: ease-out;
   }
 }
-
 @keyframes heartbeat {
   from {
     -webkit-transform: scale(1.3);
@@ -233,7 +206,7 @@ body main section .sidelines .dot {
   }
 }
 
-body main section .sidelines .startingline {
+.startingline {
   position: relative;
   margin-top: -20px;
   top: 50%;
@@ -242,7 +215,7 @@ body main section .sidelines .startingline {
   background-color: #ff2d41;
 }
 
-body main section .sidelines .line {
+.line {
   position: relative;
   margin-top: -20px;
   width: 3px;
@@ -250,17 +223,50 @@ body main section .sidelines .line {
   background-color: #ff2d41;
 }
 
-body main section .content {
-  padding-top: 8em;
+.hero {
+  background-image: url("../img/Hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-body main section .content .aboutmetext {
+.content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.aboutmepic {
+  -webkit-box-shadow: 5px 5px 0px 0px #ff2d41, 10px 10px 0px 0px #b9202f, 15px 15px 0px 0px #911925, 20px 20px 0px 0px #64111a, 25px 25px 0px 0px #36090f, -50px -50px 0px -30px rgba(0, 0, 0, 0);
+          box-shadow: 5px 5px 0px 0px #ff2d41, 10px 10px 0px 0px #b9202f, 15px 15px 0px 0px #911925, 20px 20px 0px 0px #64111a, 25px 25px 0px 0px #36090f, -50px -50px 0px -30px rgba(0, 0, 0, 0);
+}
+
+.aboutmetext {
   max-height: 100%;
   overflow: hidden;
 }
 
-body main section .content form input:focus,
-body main section .content form textarea:focus {
+.colorprimary {
+  color: #ff2d41;
+}
+
+.servicepic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 400px;
+  min-width: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+  .servicepic {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-height: 150px;
+    min-width: 300px;
+  }
+}
+
+form input:focus,
+form textarea:focus {
   outline: 2px solid #ff2d41;
 }
 /*# sourceMappingURL=style.css.map */
