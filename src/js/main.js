@@ -1,3 +1,4 @@
+const lines = document.querySelectorAll(".startingline, .line")
 // FULLPAGE JS
 new fullpage('#fullpage', {
 	//options here
@@ -8,8 +9,8 @@ new fullpage('#fullpage', {
     css3: true,
     fitToSection: true,
 
-    afterLoad: function(origin) {
-        origin.item.classList.add('lineani');
+    afterLoad: function(origin,destination) {
+        lines[destination.index].classList.add('lineani');
     },
     onLeave: function(origin, destination, direction) {
         //Aboutme
