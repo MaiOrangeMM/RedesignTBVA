@@ -13,11 +13,14 @@ new fullpage('#fullpage', {
     afterLoad: (origin, destination) => {
         lines[destination.index].classList.add('lineani');
 
+        // Hide Socialtab
+        /* 
         if (destination.index === 2) {
             social.classList.add('d-md-none');
         } else {
             social.classList.remove('d-md-none');
-        }
+        } 
+        */
     },
 });
 
@@ -40,9 +43,34 @@ menuBtn.addEventListener('click', () => {
     }
 })
 
+/* CAROUSEL */
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
+const track = document.querySelector('.track');
 
-// FORMULAR
-let form = document.getElementById('signup-form');
+let carouselWidth = document.querySelector('.carousel-container').offsetWidth;
 
-let name = document.getElementById('inputName').value;
+window.addEventListener('resize', () => {
+    carouselWidth = document.querySelector('.carousel-container').offsetWidth;
+})
+
+let index = 0;
+
+next.addEventListener('click', () => {
+  index++;
+  prev.classList.add('show');
+  track.style.transform = `translateX(-${index * carouselWidth}px)`;
+  if (track.offsetWidth - (index * carouselWidth) < carouselWidth) {
+    next.classList.add('hide');
+  }
+})
+
+prev.addEventListener('click', () => {
+    index--;
+    next.classList.remove('hide');
+    if (index === 0) {
+        prev.classList.remove('show');
+    }
+    track.style.transform = `translateX(-${index * carouselWidth}px)`;
+});

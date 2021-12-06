@@ -278,3 +278,67 @@ body {
 .datenschutzrow {
     margin-top: 5em;
 }
+
+/* CAROUSEL */
+.carousel-container {
+    width: 1400px;
+    position: relative;
+}
+@media  screen and (max-width: 768px) {
+    .carousel-container {
+        width: 70%;
+    }
+}
+@media  screen and (max-width: 1024px) {
+    .carousel-container {
+        width: 85%;
+    }
+}
+    .carousel-container .carousell-inner {
+        overflow: hidden;
+    }
+        .carousel-container .track {
+            display: inline-flex;
+            width: max-content;
+            transition: transform 0.5s;
+        }
+            .carousel-container .card-container {
+                flex-shrink: 0;
+                box-sizing: border-box;
+                padding-right: 20px;
+            
+            }
+                .carousel-container .card-container img {
+                    width: 100%;
+                    height: 600px;
+                    box-sizing: border-box;
+                }
+
+    .carousel-navigation button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background-color: $primary;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFF;
+    }
+        .carousel-navigation .prev {
+            left: -25px;
+            display: none;
+        }
+        .carousel-navigation .prev.show {
+            display: block;
+        }
+        .carousel-navigation .next {
+            right: -25px;
+        }
+        .carousel-navigation .next.hide {
+            display: none;
+        }
+
