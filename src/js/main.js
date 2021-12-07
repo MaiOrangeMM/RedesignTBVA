@@ -22,14 +22,7 @@ new fullpage('#fullpage', {
         } else {
            lines[destination.index].classList.add('lineani');
 
-        }
-
-        // Hide Socialtab
-        if (destination.index === 2) {
-            social.classList.add('d-md-none');
-        } else {
-            social.classList.remove('d-md-none');
-        }    
+        }   
     },
 
     onLeave: (origin, destination) => {
