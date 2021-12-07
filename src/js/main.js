@@ -4,27 +4,33 @@ const social = document.querySelector("#socialtab");
 new fullpage('#fullpage', {
 	//options here
     licenseKey: 'YB6B09247-BFD74F6D-80FC8055-F23750CA',
-	autoScrolling:true,
+    autoScrolling: true,
     anchors: ['home', 'about', 'portfolio', 'services', 'contact'],
     menu:'#menu',
-    css3: true,
+    scroll: true,
     fitToSection: true,
+    css3: true,
+    responsiveWidth: 1200,
 
     afterLoad: (origin, destination) => {
         lines[destination.index].classList.add('lineani');
 
+        if (origin > destination) {
+          console.log('back');
+          lines[destination.index].style.backgroundPosition ='top';
+          lines[destination.index].classList.remove('lineani');
+	        lines[destination.index].classList.add('lineaniback');
+        }
+
         // Hide Socialtab
-        /* 
         if (destination.index === 2) {
             social.classList.add('d-md-none');
         } else {
             social.classList.remove('d-md-none');
         } 
-        */
+        
     },
 });
-
-
 
 // MOBILE MENU BUTTON
 const menuBtn = document.querySelector('.menu-btn');
@@ -60,17 +66,28 @@ let index = 0;
 next.addEventListener('click', () => {
   index++;
   prev.classList.add('show');
-  track.style.transform = `translateX(-${index * carouselWidth}px)`;
-  if (track.offsetWidth - (index * carouselWidth) < carouselWidth) {
+  track.style.transform = `translateX(-${index * 200}px)`;
+  if (track.offsetWidth - (index * 200) < carouselWidth) {
     next.classList.add('hide');
   }
 })
 
 prev.addEventListener('click', () => {
-    index--;
-    next.classList.remove('hide');
-    if (index === 0) {
-        prev.classList.remove('show');
-    }
-    track.style.transform = `translateX(-${index * carouselWidth}px)`;
+  index--;
+  next.classList.remove('hide');
+  if (index === 0) {
+    prev.classList.remove('show');
+  }
+  track.style.transform = `translateX(-${index * 200}px)`;
 });
+
+
+// LIGHTBOX
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true,
+  'alwaysShowNavOnTouchDevices': true,
+  'fitImagesInViewport': true,
+  'showImageNumberLabel': true,
+  'albumLabel': "Image %1 of %2",
+})
