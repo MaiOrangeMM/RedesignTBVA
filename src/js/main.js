@@ -13,13 +13,15 @@ new fullpage('#fullpage', {
     responsiveWidth: 1200,
 
     afterLoad: (origin, destination) => {
-        lines[destination.index].classList.add('lineani');
-
-        if (origin > destination) {
+        if(destination.index >= lines.length) return;        
+       
+        if (origin.index > destination.index) {
           console.log('back');
           lines[destination.index].style.backgroundPosition ='top';
-          lines[destination.index].classList.remove('lineani');
 	        lines[destination.index].classList.add('lineaniback');
+        } else {
+           lines[destination.index].classList.add('lineani');
+
         }
 
         // Hide Socialtab
@@ -27,9 +29,15 @@ new fullpage('#fullpage', {
             social.classList.add('d-md-none');
         } else {
             social.classList.remove('d-md-none');
-        } 
-        
+        }    
     },
+
+    onLeave: (origin, destination) => {
+      if(origin.index >= lines.length) return;  
+      lines[origin.index].classList.remove('lineani');
+      lines[origin.index].classList.remove('lineaniback');
+      lines[origin.index].style.backgroundPosition ='bottom';
+    }
 });
 
 // MOBILE MENU BUTTON

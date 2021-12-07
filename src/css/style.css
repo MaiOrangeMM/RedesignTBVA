@@ -233,9 +233,9 @@ a:hover {
 }
 
 .lineaniback {
-  background-position: bottom;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #ff2d41));
-  background-image: linear-gradient(to bottom, transparent 50%, #ff2d41 50%);
+  background-position: top;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff2d41), color-stop(50%, transparent));
+  background-image: linear-gradient(to bottom, #ff2d41 50%, transparent 50%);
 }
 
 .hero {
