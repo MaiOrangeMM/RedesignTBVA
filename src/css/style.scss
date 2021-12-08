@@ -183,8 +183,8 @@ body {
         }
 
         .lineaniback {
-            background-position: top;
-            background-image: linear-gradient(to bottom, $primary 50%, transparent 50%,);
+            background-position: bottom;
+            background-image: linear-gradient(to top, transparent 50%, $primary 50%);
         }
 
     .hero {
