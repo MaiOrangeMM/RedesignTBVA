@@ -300,8 +300,12 @@ form textarea:focus {
 }
 
 @media (orientation: landscape) {
-  .img-fluid {
+  .imgslider {
     max-height: 300px !important;
+  }
+  .servicesection {
+    padding-top: 5em;
+    padding-bottom: 1em;
   }
   .servicecol {
     display: -webkit-box !important;

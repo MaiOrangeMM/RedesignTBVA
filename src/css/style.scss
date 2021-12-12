@@ -247,10 +247,14 @@ body {
 
 }
 
-@media (orientation: landscape)  {
-  .img-fluid {
-      max-height: 300px!important;
-  }
+@media (orientation: landscape){
+    .imgslider {
+        max-height: 300px!important;
+    }
+  	.servicesection{
+	padding-top: 5em;
+    padding-bottom: 1em;
+	}
   .servicecol {
       display: flex!important;
       flex-direction: row;
