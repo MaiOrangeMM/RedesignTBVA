@@ -207,35 +207,13 @@ a:hover {
   }
 }
 
-.startingline {
-  height: 50vh;
-  background-size: 100% 200%;
-}
-
-.startinglineani {
-  background-position: top;
-}
-
 .line {
   position: relative;
   width: 1.5px;
   height: 100%;
-  background-size: 100% 200%;
-  background-position: bottom;
-  -webkit-transition: background-position 1.5s ease-in-out;
-  transition: background-position 1.5s ease-in-out;
-}
-
-.lineani {
-  background-position: top;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff2d41), color-stop(50%, transparent));
-  background-image: linear-gradient(to bottom, #ff2d41 50%, transparent 50%);
-}
-
-.lineaniback {
-  background-position: bottom;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), color-stop(50%, #ff2d41));
-  background-image: linear-gradient(to top, transparent 50%, #ff2d41 50%);
+  background: #ff2d41;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 45, 65, 0)), color-stop(50%, #ff2d41), to(rgba(255, 45, 65, 0)));
+  background: linear-gradient(180deg, rgba(255, 45, 65, 0) 0%, #ff2d41 50%, rgba(255, 45, 65, 0) 100%);
 }
 
 .hero {
@@ -324,9 +302,7 @@ form textarea:focus {
     text-align: center;
   }
   .aboutmetext {
-    font-size: 2px;
-    max-height: 80%;
-    overflow: hidden;
+    font-size: 15px !important;
   }
 }
 

@@ -11,7 +11,6 @@ new fullpage('#fullpage', {
     fitToSection: true,
     css3: true,
     responsiveWidth: 1200,
-
 });
 
 // MOBILE MENU BUTTON
