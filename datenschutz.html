@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TB VISUAL ARTS | Datenschutzerklärung</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <title>TB VISUAL ARTS</title>
+
+    <link rel="icon" type="image/png" href="https://tbvisualarts.com/favicon.png">
+    
+
+    <link href="src/css/fullpage.min.css" rel="stylesheet" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -12,6 +18,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <link href="src/css/lightbox.css" rel="stylesheet" />
 
     <link href="src/css/style.css" rel="stylesheet" />
 
@@ -22,6 +30,8 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
     <script
       src="https://kit.fontawesome.com/fc10ec9d00.js"
       crossorigin="anonymous"></script>
@@ -29,17 +39,17 @@
 
   <body>
      <nav>
-      <div class="container d-md-flex justify-content-between align-items-center h-100">
-        <div class="brand d-none d-md-flex">
-          <a class="menulinkbtn" href="./index.html#home">
+      <div class="container d-lg-flex justify-content-between align-items-center img-fluid">
+        <div class="brand d-none d-lg-flex">
+          <a class="menulinkbtn" href="#home">
             <img id="logo" src="src/img/logotbvisualarts-white.svg" alt="logo" width="150em"/>
           </a>
         </div>
 
-        <div class="menumobile d-md-none d-flex justify-content-between align-items-center px-3">
+        <div class="menumobile d-lg-none d-flex justify-content-between align-items-center px-3">
           <div class="brand">
-            <a class="menulinkbtn" href="./index.html#home">
-              <img id="logo" src="src/img/logotbvisualarts-white.svg" alt="logo" width="150em"/>
+            <a class="menulinkbtn" href="#home">
+              <img id="logo" src="src/img/logotbvisualarts-white.svg" alt="logo" width="120em"/>
             </a>
           </div>
           <div class="menu-btn">
@@ -47,21 +57,20 @@
           </div>
         </div>
 
-        <ul id="menu" class="menulinks d-md-flex d-none flex-column flex-md-row align-items-center ">
-          <li class="pb-3 pb-md-0" data-menuanchor="home"><a href="./index.html#home">HOME</a></li>
-          <li class="pb-3 pb-md-0" data-menuanchor="about"><a href="./index.html#about">ABOUT ME</a></li>
-          <li class="pb-3 pb-md-0" data-menuanchor="portfolio"><a href="./index.html#portfolio">PORTFOLIO</a></li>
-          <li class="pb-3 pb-md-0" data-menuanchor="services"><a href="./index.html#services">SERVICES</a></li>
-          <li class="pb-3 pb-md-0" data-menuanchor="contact"><a href="./index.html#contact">CONTACT</a></li>
+        <ul id="menu" class="menulinks d-lg-flex d-none flex-column flex-lg-row align-items-center ">
+          <li class="pb-3 pb-lg-0" data-menuanchor="home"><a class="menulink" href="#home">HOME</a></li>
+          <li class="pb-3 pb-lg-0" data-menuanchor="about"><a class="menulink" href="#about">ABOUT ME</a></li>
+          <li class="pb-3 pb-lg-0" data-menuanchor="portfolio"><a class="menulink" href="#portfolio">PORTFOLIO</a></li>
+          <li class="pb-3 pb-lg-0" data-menuanchor="services"><a class="menulink" href="#services">SERVICES</a></li>
+          <li class="pb-3 pb-lg-0" data-menuanchor="contact"><a class="menulink" href="#contact">CONTACT</a></li>
         </ul>
       </div>
     </nav>
 
-    <div id="socialtab" class="social d-none d-md-flex flex-column justify-content-evenly align-items-center">
+    <div id="socialtab" class="social d-none d-lg-flex flex-column justify-content-evenly align-items-center">
       <a href="https://www.instagram.com/tb.visualarts/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.instagram.com/tb.visualarts/" target="_blank"><i class="fab fa-facebook-square"></i></a>
     </div>
-
       <!-- HOME -->
       <div class="section">
         <div class="row">
@@ -195,6 +204,18 @@
           </div>
         </div>
       </div>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+
+    <script src="src/js/fullpage.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
     
     <script src="src/js/main.js"></script>
   </body>
