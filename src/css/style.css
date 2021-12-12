@@ -212,8 +212,8 @@ a:hover {
   width: 1.5px;
   height: 100%;
   background: #ff2d41;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 45, 65, 0)), color-stop(50%, #ff2d41), to(rgba(255, 45, 65, 0)));
-  background: linear-gradient(180deg, rgba(255, 45, 65, 0) 0%, #ff2d41 50%, rgba(255, 45, 65, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, rgba(255, 45, 65, 0)), color-stop(50%, #ff2d41), color-stop(90%, rgba(255, 45, 65, 0)));
+  background: linear-gradient(180deg, rgba(255, 45, 65, 0) 15%, #ff2d41 50%, rgba(255, 45, 65, 0) 90%);
 }
 
 .hero {
