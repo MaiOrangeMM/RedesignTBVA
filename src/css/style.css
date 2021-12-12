@@ -299,9 +299,21 @@ form textarea:focus {
   }
 }
 
-@media (orientation: landscape) and (max-height: 768px) {
+@media (orientation: landscape) {
   .img-fluid {
     max-height: 300px !important;
+  }
+  .servicecol {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
