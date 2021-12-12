@@ -216,13 +216,6 @@ a:hover {
   background: linear-gradient(180deg, rgba(255, 45, 65, 0) 15%, #ff2d41 50%, rgba(255, 45, 65, 0) 90%);
 }
 
-.hero {
-  background-image: url("../img/Hero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .content {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -308,9 +301,6 @@ form textarea:focus {
 
 /* MEDIA QUERIES FOR DEKTOP */
 @media only screen and (min-width: 768px) {
-  .hero {
-    background-size: cover;
-  }
   .servicepic {
     height: 25em;
     max-height: 25em;

@@ -47,8 +47,8 @@ let index = 0;
 next.addEventListener('click', () => {
   index++;
   prev.classList.add('show');
-  track.style.transform = `translateX(-${index * 200}px)`;
-  if (track.offsetWidth - (index * 200) < carouselWidth) {
+  track.style.transform = `translateX(-${index * 400}px)`;
+  if (track.offsetWidth - (index * 400) < carouselWidth) {
     next.classList.add('hide');
   }
 })
@@ -59,7 +59,7 @@ prev.addEventListener('click', () => {
   if (index === 0) {
     prev.classList.remove('show');
   }
-  track.style.transform = `translateX(-${index * 200}px)`;
+  track.style.transform = `translateX(-${index * 400}px)`;
 });
 
 

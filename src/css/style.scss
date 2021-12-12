@@ -168,13 +168,6 @@ body {
             background: linear-gradient(180deg, rgba(255,45,65,0) 15%, rgba(255,45,65,1) 50%, rgba(255,45,65,0) 90%);
         }
 
-    .hero {
-        background-image: url('../img/Hero.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
     .content {
         box-sizing: border-box;
     }
@@ -251,18 +244,17 @@ body {
     .aboutmetext {
         font-size: 15px!important;
     }
+
 }
 
 /* MEDIA QUERIES FOR DEKTOP */
 @media only screen and (min-width: 768px) {
-    .hero {
-        background-size: cover;
-    }
             
     .servicepic {
         height: 25em;
         max-height: 25em; ;
     }
+
 }
 
 
