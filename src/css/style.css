@@ -401,7 +401,7 @@ form textarea:focus {
 
 .carousel-container .card-container img {
   width: 100%;
-  height: 350px;
+  height: 330px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -o-object-fit: contain;
