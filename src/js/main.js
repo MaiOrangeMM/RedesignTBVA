@@ -71,12 +71,3 @@ lightbox.option({
   showImageNumberLabel: true,
   albumLabel: "Image %1 of %2",
 });
-
-/* $recaptcha = $_POST["g-recaptcha-response"];
-$res = reCaptcha($recaptcha);
-if ($res["success"]) {
-  // Send email
-} else {
-  // Error
-}
-*/
