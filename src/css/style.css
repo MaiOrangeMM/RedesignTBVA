@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'ArcaMajora3';
+  font-family: "ArcaMajora3";
   src: url("../fonts/ArcaMajora3-Bold.eot");
   src: url("../fonts/ArcaMajora3-Bold.woff2") format("woff2");
   src: url("../fonts/ArcaMajora3-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'ArcaMajora3-Heavy';
+  font-family: "ArcaMajora3-Heavy";
   src: url("../fonts/ArcaMajora3-Heavy.eot");
   src: url("../fonts/ArcaMajora3-Heavy.woff2") format("woff2");
   src: url("../fonts/ArcaMajora3-Heavy.woff") format("woff");
@@ -14,15 +14,22 @@
 
 *,
 *::before,
-*::after, .row, nav, h4, h6, li, a, ul {
+*::after,
+.row,
+nav,
+h4,
+h6,
+li,
+a,
+ul {
   margin: 0;
   padding: 0;
 }
 
 body {
   background-color: #000;
-  color: #FFF;
-  font-family: ArcaMajora3, 'Poppins', sans-serif;
+  color: #fff;
+  font-family: ArcaMajora3, "Poppins", sans-serif;
 }
 
 nav {
@@ -38,22 +45,23 @@ li {
   padding-right: 2em;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-size: 1.5em;
 }
 
 a:hover {
   color: #ff2d41;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .active .menulink {
   color: #ff2d41;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .menu-btn {
@@ -70,27 +78,27 @@ a:hover {
   width: 30px;
   height: 30px;
   cursor: pointer;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger {
   width: 30px;
   height: 3px;
   background: #fff;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before,
 .menu-btn__burger::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 30px;
   height: 3px;
   background: #fff;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -134,12 +142,13 @@ a:hover {
   font-size: 1.5em;
 }
 
-.social a, .social a:visited {
+.social a,
+.social a:visited {
   color: #000;
 }
 
 .social a:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 .sidelines {
@@ -270,12 +279,13 @@ form textarea:focus {
   color: #000;
 }
 
-.footer .footerlink, footer .footerlink:visited {
+.footer .footerlink,
+footer .footerlink:visited {
   color: #000;
 }
 
 .footer .footerlink:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 .datenschutzrow {
@@ -357,7 +367,7 @@ form textarea:focus {
       flex-shrink: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-right: 20px;
+  padding-right: 0px;
 }
 
 .carousel-navigation button {
@@ -379,7 +389,7 @@ form textarea:focus {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #FFF;
+  color: #fff;
 }
 
 .carousel-navigation .prev {
